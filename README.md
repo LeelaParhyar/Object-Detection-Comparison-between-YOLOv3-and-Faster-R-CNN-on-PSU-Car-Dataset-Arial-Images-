@@ -1,6 +1,6 @@
-# Object Detection Comparision between YOLOv3 
+# Object Detection Comparision between YOLOv3 and Faster RCNN
 
-This project compares two object detection models—YOLOv3 and Faster R-CNN—on the PSU Car Dataset containing aerial images. The goal is to evaluate accuracy, speed, and robustness in detecting cars under challenging visual conditions.
+This project compares two object detection models YOLOv3 and Faster R-CNN on the PSU Car Dataset containing aerial images. The goal is to evaluate accuracy, speed, and robustness in detecting cars under challenging visual conditions.
 
 ## Motivation.
 
