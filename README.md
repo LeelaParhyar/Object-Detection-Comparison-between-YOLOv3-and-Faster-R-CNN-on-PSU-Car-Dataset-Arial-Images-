@@ -17,6 +17,7 @@ Faster R-CNN Models.
 We implemented two versions of Faster R-CNN using PyTorch's TorchVision library:
 
 (i) FRCNN-ResNet50: With a ResNet-50 backbone and Feature Pyramid Network (FPN).
+
 (ii) FRCNN-MobileNetV3: A lightweight alternative using MobileNetV3-Large.
 
 Faster R-CNN is a two-stage detector. The first stage proposes regions via a Region Proposal Network (RPN), and the second stage classifies and refines those proposals. For training, we used cross-entropy loss for classification and Smooth L1 loss for bounding box regression, which is robust to outliers and maintains good localization precision. We trained both models using Stochastic Gradient Descent (SGD) with a momentum of 0.9 for 10 epochs.
@@ -25,6 +26,7 @@ YOLO Models
 We trained two single-stage models using the Ultralytics PyTorch implementation:
 
 (i) YOLOv3 with a Darknet-53 backbone.
+
 (ii) YOLOv8n (nano version) with a modern lightweight backbone.
 
 YOLO models predict bounding boxes and class scores directly from feature maps at multiple scales. The YOLOv3 loss function combines mean squared error for box regression, binary cross-entropy for objectness, and cross-entropy for classification. YOLOv8n was fine-tuned using pretrained weights (yolov8n.pt) adapted for single-class detection. Training was performed for 10 epochs using Ultralytics' default training loop.
